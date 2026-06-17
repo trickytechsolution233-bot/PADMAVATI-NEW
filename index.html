@@ -44,7 +44,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ─── GRAIN OVERLAY ─────────────────────────── */
 body::before {
   content: '';
   position: fixed;
@@ -55,7 +54,6 @@ body::before {
   z-index: 9999;
 }
 
-/* ─── FLOATING BG ───────────────────────────── */
 .crops-bg { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
 .crops-bg span {
   position: absolute;
@@ -75,7 +73,6 @@ body::before {
 .crops-bg span:nth-child(6){left:82%; animation-duration:20s; animation-delay:10s;}
 .crops-bg span:nth-child(7){left:92%; animation-duration:27s; animation-delay:1s;}
 
-/* ─── NAV ────────────────────────────────────── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -150,7 +147,6 @@ nav {
   font-weight: 700;
 }
 
-/* ─── HERO ───────────────────────────────────── */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -163,7 +159,6 @@ nav {
               linear-gradient(180deg, #071a0d 0%, #0a2e14 60%, #071a0d 100%);
 }
 
-/* Animated rings */
 .hero-rings {
   position: absolute;
   top: 50%; left: 50%;
@@ -255,7 +250,6 @@ nav {
   to{   opacity:1; transform:translateY(0);}
 }
 
-/* ─── BUTTONS ────────────────────────────────── */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -297,7 +291,6 @@ nav {
 }
 .btn-review-outline:hover { background: var(--gold); color: #000 !important; }
 
-/* ─── SECTION BASE ───────────────────────────── */
 section { position: relative; z-index: 1; }
 
 .section-inner {
@@ -331,14 +324,12 @@ section { position: relative; z-index: 1; }
   max-width: 640px;
 }
 
-/* ─── DIVIDER ────────────────────────────────── */
 .divider {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(77,222,128,0.25), transparent);
   margin: 0;
 }
 
-/* ─── ABOUT ──────────────────────────────────── */
 .about-section {
   background: linear-gradient(180deg, #071a0d 0%, #0d2818 100%);
 }
@@ -406,7 +397,6 @@ section { position: relative; z-index: 1; }
 }
 .stat-label { color: var(--text-muted); font-size: 13px; margin-top: 4px; }
 
-/* ─── PRODUCTS ───────────────────────────────── */
 .products-section {
   background: linear-gradient(180deg, #0d2818 0%, #071a0d 100%);
 }
@@ -480,7 +470,6 @@ section { position: relative; z-index: 1; }
   line-height: 1.6;
 }
 
-/* ─── GALLERY ────────────────────────────────── */
 .gallery-section {
   background: linear-gradient(180deg, #071a0d 0%, #0a1f10 100%);
 }
@@ -558,7 +547,6 @@ section { position: relative; z-index: 1; }
   border-radius: 4px;
 }
 
-/* ─── TESTIMONIALS ───────────────────────────── */
 .test-section {
   background: linear-gradient(180deg, #0a1f10 0%, #0d2818 100%);
 }
@@ -643,7 +631,6 @@ section { position: relative; z-index: 1; }
   font-size: 16px;
 }
 
-/* ─── CONTACT ────────────────────────────────── */
 .contact-section {
   background: linear-gradient(180deg, #0d2818 0%, #071a0d 100%);
 }
@@ -713,7 +700,6 @@ section { position: relative; z-index: 1; }
   display: block;
 }
 
-/* ─── FOOTER ─────────────────────────────────── */
 footer {
   background: #030d07;
   border-top: 1px solid rgba(77,222,128,0.12);
@@ -747,7 +733,6 @@ footer {
   margin-top: 16px;
 }
 
-/* ─── STICKY ACTIONS ─────────────────────────── */
 .sticky-actions {
   position: fixed;
   right: 20px; bottom: 20px;
@@ -775,7 +760,6 @@ footer {
 .s-wa   { background: linear-gradient(135deg,#25d366,#128c7e); }
 .s-call { background: linear-gradient(135deg,#1565c0,#0d47a1); }
 
-/* ─── SCROLL REVEAL ──────────────────────────── */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -792,7 +776,6 @@ footer {
 .reveal-d5{ transition-delay: 0.5s; }
 .reveal-d6{ transition-delay: 0.6s; }
 
-/* ─── RESPONSIVE ─────────────────────────────── */
 @media(max-width:900px){
   nav{ padding:14px 20px; }
   .nav-links{ display:none; }
@@ -813,12 +796,10 @@ footer {
 </head>
 <body>
 
-<!-- Floating Crops Background -->
 <div class="crops-bg">
   <span>🌾</span><span>🌱</span><span>🌿</span><span>🌾</span><span>🌱</span><span>🌿</span><span>🌾</span>
 </div>
 
-<!-- Navigation -->
 <nav id="mainNav">
   <a class="nav-logo" href="#">
     <img src="https://ik.imagekit.io/2bihaekhf/compress%20(1).png?updatedAt=1780935587197" alt="Logo">
@@ -837,7 +818,6 @@ footer {
   </div>
 </nav>
 
-<!-- Hero -->
 <section class="hero">
   <div class="hero-rings">
     <div class="ring"></div><div class="ring"></div>
@@ -871,7 +851,6 @@ footer {
 
 <div class="divider"></div>
 
-<!-- About -->
 <section class="about-section" id="about">
   <div class="section-inner">
     <div class="about-grid">
@@ -880,7 +859,7 @@ footer {
           <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&auto=format" alt="Agricultural field">
         </div>
         <div class="about-accent-card">
-          <span class="big">15+</span>
+          <span class="big">1.5+</span>
           <span id="yearsLabel">Years of Trust</span>
         </div>
       </div>
@@ -890,11 +869,11 @@ footer {
         <p class="section-body" id="aboutText"></p>
         <div class="about-stats">
           <div class="stat-card reveal reveal-d3">
-            <div class="stat-num">500+</div>
+            <div class="stat-num">100+</div>
             <div class="stat-label" id="stat1">Happy Farmers</div>
           </div>
           <div class="stat-card reveal reveal-d4">
-            <div class="stat-num">200+</div>
+            <div class="stat-num">90+</div>
             <div class="stat-label" id="stat2">Products</div>
           </div>
           <div class="stat-card reveal reveal-d5">
@@ -913,7 +892,6 @@ footer {
 
 <div class="divider"></div>
 
-<!-- Products -->
 <section class="products-section" id="products">
   <div class="section-inner">
     <div class="reveal" style="text-align:center;margin-bottom:10px;">
@@ -957,7 +935,6 @@ footer {
 
 <div class="divider"></div>
 
-<!-- Gallery -->
 <section class="gallery-section" id="gallery">
   <div class="section-inner">
     <div class="reveal" style="text-align:center;margin-bottom:10px;">
@@ -969,11 +946,11 @@ footer {
       <button class="slide-btn slide-next" onclick="nextSlide()">❯</button>
       <div class="slides" id="slides">
         <img src="https://lh3.googleusercontent.com/p/AF1QipP76oWdC9aXc2iEh0DoROC7LG67mTiVpsbEIVUs=w1366-h611" alt="Shop interior">
-        <img src="https://www.agfoundation.org/imgz/_w1600/2023-11-01_12-07-59.jpg" alt="Agricultural products">
-        <img src="https://aztransmac2.asu.edu/images/majorGuides/agriculture.jpeg" alt="Seeds and fertilizers">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGxAmf24ieK8XwR1kC6dkEU5hawP8ybhCWjKW8H_8x4ekouiZ-y_ZdvSofKQaQFKjXfiDhxb0oM63wqdkdX2LP3xKsNLYcjzBXQdftGd6ZSPIaZnFpAX3pQ3AbKw_QBXzmdxuBka3bQHD4=s1360-w1360-h1020-rw" alt="Agricultural products">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAG5Eg1frsBxlF6xQdwtpHhXfjZHazP-C2cI93BXLHwwFxvTsig9fOkopWkeJrTf_bOgpmSnlaMK2enWMtYAbrhuWPI5gDGXAlIlhpAQTLg7pUbr5ypck0FEQtO50aGaga_4goOhjy8Elqrn=s1360-w1360-h1020-rw" alt="Seeds and fertilizers">
         <img src="https://lh3.googleusercontent.com/p/AF1QipMfAIpM7pvsgriBarrSXpaiTJPadgty6ohzr4dv=w1366-h611" alt="Store front">
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerA68HxWxf3Tm2K7lPgqgbYR0-d9VefrXWpnbqI5C7WptSNrlKYHYS2Kk7hghr_EixiTS0h1N8WiEv5BP3nUr8j_ZOBpdo2tq1qkHhrPR2ZWeQTAmrqLUs4rEQqoVZpmkSZ59yjEz9qpLMT=w1366-h611" alt="Shop exterior">
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepoLsJDwOptzH0_K_-YQEbDbH2a47vgND1Byi17PjFKHYYJBD646pyfTwJ6_ZQwpVw7wrnZ0sqePE8c60J9LlZ1eNMieYVbn0gSTszFrtDGx56KLmBFlv_KP8wjjQA1lyTAJX2IyjvVvB4=w1366-h611" alt="Location view">
+        <img src="https://ik.imagekit.io/2bihaekhf/product%20images/WhatsApp%20Image%202026-03-14%20at%207.19.35%20PM%20(1).jpeg?updatedAt=1773511126116" alt="Shop exterior">
+        <img src="https://ik.imagekit.io/2bihaekhf/product%20images/WhatsApp%20Image%202026-03-14%20at%207.19.32%20PM.jpeg?updatedAt=1773511126088" alt="Location view">
       </div>
       <div class="dots" id="dots"></div>
       <div class="slide-counter"><span id="slideNum">1</span> / <span id="slideTotal">6</span></div>
@@ -983,7 +960,6 @@ footer {
 
 <div class="divider"></div>
 
-<!-- Testimonials -->
 <section class="test-section" id="testimonials">
   <div class="section-inner">
     <div class="reveal" style="text-align:center;margin-bottom:10px;">
@@ -1020,7 +996,7 @@ footer {
           <div class="test-avatar" id="f3av">M</div>
           <div>
             <div class="test-name" id="f3n"></div>
-            <div class="test-role" id="f3r">Farmer, Bagalkot</div>
+            <div class="test-role" id="f3r">Farmer, Belagavi</div>
           </div>
         </div>
       </div>
@@ -1042,7 +1018,6 @@ footer {
 
 <div class="divider"></div>
 
-<!-- Contact -->
 <section class="contact-section" id="contact">
   <div class="section-inner">
     <div class="reveal">
@@ -1101,32 +1076,29 @@ footer {
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <div class="footer-inner">
     <div class="footer-logo-row">
-      <img src="https://lh3.googleusercontent.com/geougc-cs/ABOP9pvnPxhnrHqcYgLbZYZ8id25_6-iQZkpAChJZA-HWZrxFchLg8l5UU6RSOywoBtvHF-hABqFgmHQKhjzaZes9TbifnDRhs_TfA4JXSy3Cf8IyN4qtHfO3JMUXhyDaKRHCf8XhvGBmIgVmY4l=w336-h336-p" alt="Logo">
+      <img src="https://ik.imagekit.io/2bihaekhf/compress%20(1).png?updatedAt=1780935587197" alt="Logo">
       <span class="footer-name" id="footerName">Shri Padmavati Krushi Aushadi Kendra</span>
     </div>
     <div class="footer-copy" id="footerText"></div>
   </div>
 </footer>
 
-<!-- Sticky Buttons -->
 <div class="sticky-actions">
   <a class="sticky-btn s-wa" href="https://wa.me/918550047165" title="WhatsApp">💬</a>
   <a class="sticky-btn s-call" href="tel:+918550047165" title="Call">📞</a>
 </div>
 
 <script>
-/* ─── CONTENT ─────────────────────────────────── */
 const content = {
   en: {
     heroBadge: "Trusted Since Generations",
     mainTitle: "Shri Padmavati Krushi Aushadi Kendra",
     subtitle: "Your trusted partner for premium seeds, fertilizers, pesticides & expert agricultural guidance in M K Hubli.",
     aboutTitle: "Rooted in Farming, Growing with Farmers",
-    aboutText: "A cornerstone agricultural shop in M K Hubli, Bagalkot district. We provide genuine, quality-tested products alongside expert guidance to help every farmer maximise their yield and protect their crops.",
+    aboutText: "A cornerstone agricultural shop in M K Hubli, Belagavi district. We provide genuine, quality-tested products alongside expert guidance to help every farmer maximise their yield and protect their crops.",
     yearsLabel: "Years of Trust",
     stat1: "Happy Farmers", stat2: "Products", stat3: "Google Rating", stat4: "Support",
     productTitle: "Products & Services",
@@ -1142,12 +1114,12 @@ const content = {
     testTag: "Farmer Reviews",
     f1n: "Ramesh Patil", f1t: "Best krushi kendra in the area. Genuine products and very helpful owner.", f1r: "Farmer, Hubli",
     f2n: "Suresh Gowda", f2t: "Excellent guidance for my sugarcane crop. Yield improved this season.", f2r: "Farmer, Karnataka",
-    f3n: "Mahadev Kulkarni", f3t: "Very cooperative staff. Always available on WhatsApp to answer crop questions.", f3r: "Farmer, Bagalkot",
+    f3n: "Mahadev Kulkarni", f3t: "Very cooperative staff. Always available on WhatsApp to answer crop questions.", f3r: "Farmer, Belagavi",
     reviewCta: "Share your experience and help fellow farmers discover quality agricultural solutions.",
     googleReviewBtn: "Write a Google Review", snapBtn: "Find on Snapchat",
     contactTitle: "Find Us in M K Hubli",
     contactTag: "Find Us",
-    address: "NH-4 Service Road, Gandhinagar, M K Hubli, Bagalkot, Karnataka – 591118",
+    address: "NH-4 Service Road, Gandhinagar, M K Hubli, Karnataka – 591118",
     addressLabel: "Address", phoneLabel: "Phone", hoursLabel: "Business Hours",
     hours: "Mon–Sat: 8:00 AM – 8:00 PM",
     navAbout: "About", navProducts: "Products", navGallery: "Gallery", navContact: "Contact",
@@ -1160,7 +1132,7 @@ const content = {
     mainTitle: "ಶ್ರೀ ಪದ್ಮಾವತಿ ಕೃಷಿ ಔಷಧಿ ಕೇಂದ್ರ",
     subtitle: "ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿಯಲ್ಲಿ ರೈತರಿಗೆ ಗುಣಮಟ್ಟದ ಬೀಜಗಳು, ಗೊಬ್ಬರಗಳು ಮತ್ತು ತಜ್ಞ ಮಾರ್ಗದರ್ಶನ.",
     aboutTitle: "ಕೃಷಿಯಲ್ಲಿ ಬೇರುಬಿಟ್ಟ, ರೈತರೊಂದಿಗೆ ಬೆಳೆದ",
-    aboutText: " ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿಯ ವಿಶ್ವಾಸಾರ್ಹ ಕೃಷಿ ಅಂಗಡಿ. ಉತ್ತಮ ಬೆಳೆ ಮತ್ತು ಉತ್ಪಾದನೆಗಾಗಿ ಗುಣಮಟ್ಟದ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ತಜ್ಞ ಸಲಹೆ ನೀಡುತ್ತೇವೆ.",
+    aboutText: "ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿ, ಬೆಳಗಾವಿ ಜಿಲ್ಲೆಯ ವಿಶ್ವಾಸಾರ್ಹ ಕೃಷಿ ಅಂಗಡಿ. ಉತ್ತಮ ಬೆಳೆ ಮತ್ತು ಉತ್ಪಾದನೆಗಾಗಿ ಗುಣಮಟ್ಟದ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ತಜ್ಞ ಸಲಹೆ ನೀಡುತ್ತೇವೆ.",
     yearsLabel: "ವರ್ಷಗಳ ನಂಬಿಕೆ",
     stat1: "ಸಂತುಷ್ಟ ರೈತರು", stat2: "ಉತ್ಪನ್ನಗಳು", stat3: "ಗೂಗಲ್ ರೇಟಿಂಗ್", stat4: "ಬೆಂಬಲ",
     productTitle: "ನಮ್ಮ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಸೇವೆಗಳು",
@@ -1176,12 +1148,12 @@ const content = {
     testTag: "ರೈತರ ಅನುಭವ",
     f1n: "ರಮೇಶ್ ಪಾಟೀಲ್", f1t: "ಅತ್ಯುತ್ತಮ ಕೃಷಿ ಅಂಗಡಿ. ನಿಜವಾದ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ತುಂಬಾ ಸಹಕಾರಿ ಮಾಲೀಕರು.", f1r: "ರೈತ, ಹುಬ್ಬಳ್ಳಿ",
     f2n: "ಸುರೇಶ್ ಗೌಡ", f2t: "ನನ್ನ ಕಬ್ಬಿನ ಬೆಳೆಗೆ ಉತ್ತಮ ಮಾರ್ಗದರ್ಶನ. ಈ ಋತುವಿನಲ್ಲಿ ಇಳುವರಿ ಹೆಚ್ಚಿದೆ.", f2r: "ರೈತ, ಕರ್ನಾಟಕ",
-    f3n: "ಮಹಾದೇವ ಕುಲಕರ್ಣಿ", f3t: "ತುಂಬಾ ಸಹಕಾರಿ ಸಿಬ್ಬಂದಿ. ಬೆಳೆ ಪ್ರಶ್ನೆಗಳಿಗೆ ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಯಾವಾಗಲೂ ಲಭ್ಯ.", f3r: "ರೈತ, ಬಾಗಲಕೋಟೆ",
+    f3n: "ಮಹಾದೇವ ಕುಲಕರ್ಣಿ", f3t: "ತುಂಬಾ ಸಹಕಾರಿ ಸಿಬ್ಬಂದಿ. ಬೆಳೆ ಪ್ರಶ್ನೆಗಳಿಗೆ ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಯಾವಾಗಲೂ ಲಭ್ಯ.", f3r: "ರೈತ, ಬೆಳಗಾವಿ",
     reviewCta: "ನಿಮ್ಮ ಅನುಭವ ಹಂಚಿಕೊಳ್ಳಿ ಮತ್ತು ಇತರ ರೈತರಿಗೆ ಗುಣಮಟ್ಟದ ಕೃಷಿ ಪರಿಹಾರಗಳನ್ನು ಕಂಡುಹಿಡಿಯಲು ಸಹಾಯ ಮಾಡಿ.",
     googleReviewBtn: "ಗೂಗಲ್ ರಿವ್ಯೂ ಬರೆಯಿರಿ", snapBtn: "ಸ್ನ್ಯಾಪ್‌ಚಾಟ್‌ನಲ್ಲಿ ಹುಡುಕಿ",
     contactTitle: "ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿಯಲ್ಲಿ ನಮ್ಮನ್ನು ಕಂಡುಕೊಳ್ಳಿ",
     contactTag: "ಸಂಪರ್ಕ",
-    address: "ಎನ್ಎಚ್-4 ಸರ್ವಿಸ್ ರಸ್ತೆ, ಗಾಂಧಿನಗರ, ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿ, ಬಾಗಲಕೋಟೆ, ಕರ್ನಾಟಕ – 591118",
+    address: "ಎನ್ಎಚ್-4 ಸರ್ವಿಸ್ ರಸ್ತೆ, ಗಾಂಧಿನಗರ, ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿ, ಕರ್ನಾಟಕ – 591118",
     addressLabel: "ವಿಳಾಸ", phoneLabel: "ದೂರವಾಣಿ", hoursLabel: "ವ್ಯವಹಾರ ಸಮಯ",
     hours: "ಸೋಮ–ಶನಿ: ಬೆಳ. 8:00 – ಸಂ. 8:00",
     navAbout: "ನಮ್ಮ ಬಗ್ಗೆ", navProducts: "ಉತ್ಪನ್ನಗಳು", navGallery: "ಗ್ಯಾಲರಿ", navContact: "ಸಂಪರ್ಕ",
@@ -1194,7 +1166,7 @@ const content = {
     mainTitle: "श्री पद्मावती कृषि औषधि केंद्र",
     subtitle: "एम के हुबली में किसानों के लिए उत्तम बीज, उर्वरक, कीटनाशक और विशेषज्ञ कृषि मार्गदर्शन।",
     aboutTitle: "कृषि में जड़ें, किसानों के साथ विकास",
-    aboutText: "बागलकोट जिले के एम के हुबली की एक विश्वसनीय कृषि दुकान। हम हर किसान को अधिकतम उपज और फसल सुरक्षा के लिए गुणवत्ता परीक्षित उत्पाद और विशेषज्ञ सलाह प्रदान करते हैं।",
+    aboutText: "बेलगावी जिले के एम के हुबली की एक विश्वसनीय कृषि दुकान। हम हर किसान को अधिकतम उपज और फसल सुरक्षा के लिए गुणवत्ता परीक्षित उत्पाद और विशेषज्ञ सलाह प्रदान करते हैं।",
     yearsLabel: "वर्षों का विश्वास",
     stat1: "खुश किसान", stat2: "उत्पाद", stat3: "गूगल रेटिंग", stat4: "समर्थन",
     productTitle: "हमारे उत्पाद और सेवाएं",
@@ -1210,12 +1182,12 @@ const content = {
     testTag: "किसानों की राय",
     f1n: "रमेश पाटिल", f1t: "क्षेत्र में सबसे अच्छा कृषि केंद्र। असली उत्पाद और बहुत सहायक मालिक।", f1r: "किसान, हुबली",
     f2n: "सुरेश गौड़ा", f2t: "मेरी गन्ने की फसल के लिए उत्कृष्ट मार्गदर्शन। इस सीजन में उपज बढ़ी।", f2r: "किसान, कर्नाटक",
-    f3n: "महादेव कुलकर्णी", f3t: "बहुत सहयोगी स्टाफ। फसल प्रश्नों के लिए व्हाट्सएप पर हमेशा उपलब्ध।", f3r: "किसान, बागलकोट",
+    f3n: "महादेव कुलकर्णी", f3t: "बहुत सहयोगी स्टाफ। फसल प्रश्नों के लिए व्हाट्सएप पर हमेशा उपलब्ध।", f3r: "किसान, बेलगावी",
     reviewCta: "अपना अनुभव साझा करें और साथी किसानों को गुणवत्ता कृषि समाधान खोजने में मदद करें।",
     googleReviewBtn: "गूगल रिव्यू लिखें", snapBtn: "स्नैपचैट पर खोजें",
     contactTitle: "एम के हुबली में हमें खोजें",
     contactTag: "हमसे मिलें",
-    address: "एनएच-4 सर्विस रोड, गांधीनगर, एम के हुबली, बागलकोट, कर्नाटक – 591118",
+    address: "एनएच-4 सर्विस रोड, गांधीनगर, एम के हुबली, कर्नाटक – 591118",
     addressLabel: "पता", phoneLabel: "फ़ोन", hoursLabel: "व्यावसायिक घंटे",
     hours: "सोम–शनि: सुबह 8:00 – शाम 8:00",
     navAbout: "हमारे बारे में", navProducts: "उत्पाद", navGallery: "गैलरी", navContact: "संपर्क",
@@ -1262,12 +1234,10 @@ function setLang(l) {
   set('callLabel', c.callLabel);
   set('footerText', c.footerText); set('footerName', c.footerName);
 
-  // Update avatar initials
   set('f1av', c.f1n.charAt(0));
   set('f2av', c.f2n.charAt(0));
   set('f3av', c.f3n.charAt(0));
 
-  // Update active button
   ['En','Kn','Hi'].forEach(x => {
     const btn = document.getElementById('btn'+x);
     if(btn) btn.classList.toggle('active', x.toLowerCase()===l);
@@ -1276,7 +1246,6 @@ function setLang(l) {
 
 setLang('en');
 
-/* ─── SLIDER ──────────────────────────────────── */
 let idx = 0;
 const slidesEl = document.getElementById('slides');
 const dotsBox  = document.getElementById('dots');
@@ -1303,17 +1272,14 @@ function nextSlide(){ idx = (idx + 1) % total; updateSlider(); }
 function goSlide(i){ idx = i; updateSlider(); }
 updateSlider();
 
-// Auto-slide
 setInterval(nextSlide, 5000);
 
-/* ─── SCROLL REVEAL ───────────────────────────── */
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.12 });
 reveals.forEach(el => observer.observe(el));
 
-/* ─── NAV SCROLL SHADOW ───────────────────────── */
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('mainNav');
   nav.style.boxShadow = window.scrollY > 40 ? '0 4px 30px rgba(0,0,0,0.4)' : 'none';
