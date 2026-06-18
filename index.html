@@ -31,7 +31,6 @@
   --radius-lg:    24px;
   --radius-xl:    36px;
   --shadow:       0 20px 60px rgba(0,0,0,0.4);
-  --banner-h:     44px;
 }
 
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
@@ -74,100 +73,9 @@ body::before {
 .crops-bg span:nth-child(6){left:82%; animation-duration:20s; animation-delay:10s;}
 .crops-bg span:nth-child(7){left:92%; animation-duration:27s; animation-delay:1s;}
 
-/* ===== Launching Soon Banner ===== */
-.launch-banner {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 1100;
-  height: var(--banner-h);
-  display: flex;
-  align-items: center;
-  background: linear-gradient(90deg, #0d3b1c, #155a2b 35%, #1db954 65%, #155a2b);
-  background-size: 200% 100%;
-  animation: bannerShift 6s linear infinite;
-  border-bottom: 1px solid rgba(245,200,66,0.4);
-  overflow: hidden;
-}
-@keyframes bannerShift {
-  0%   { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
-}
-.launch-banner-track {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-  white-space: nowrap;
-  animation: bannerScroll 18s linear infinite;
-  padding-left: 48px;
-}
-.launch-banner-track span {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #fff;
-}
-.launch-banner-track .pill {
-  background: var(--gold);
-  color: #0a2e14;
-  padding: 3px 12px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.launch-banner-track .dot-spark {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: var(--gold);
-  box-shadow: 0 0 8px var(--gold);
-  animation: sparkPulse 1.4s ease-in-out infinite;
-}
-@keyframes sparkPulse {
-  0%,100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.7); }
-}
-@keyframes bannerScroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-.launch-banner-close {
-  position: absolute;
-  right: 14px; top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.25);
-  border: 1px solid rgba(255,255,255,0.3);
-  color: #fff;
-  width: 22px; height: 22px;
-  border-radius: 50%;
-  font-size: 13px;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 5;
-  transition: 0.2s;
-}
-.launch-banner-close:hover { background: rgba(0,0,0,0.5); }
-.launch-banner::after {
-  content: '';
-  position: absolute;
-  right: 0; top: 0; bottom: 0;
-  width: 70px;
-  background: linear-gradient(90deg, transparent, rgba(10,46,20,0.55));
-  pointer-events: none;
-}
-
-body.banner-hidden .launch-banner { display: none; }
-body.banner-hidden { --banner-h: 0px; }
-
 nav {
   position: fixed;
-  top: var(--banner-h); left: 0; right: 0;
+  top: 0; left: 0; right: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -176,7 +84,7 @@ nav {
   background: rgba(10,46,20,0.85);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(77,222,128,0.15);
-  transition: top 0.3s ease, box-shadow 0.3s;
+  transition: 0.3s;
 }
 .nav-logo {
   display: flex;
@@ -245,7 +153,7 @@ nav {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 160px 24px 80px;
+  padding: 120px 24px 80px;
   overflow: hidden;
   background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(29,185,84,0.12) 0%, transparent 70%),
               linear-gradient(180deg, #071a0d 0%, #0a2e14 60%, #071a0d 100%);
@@ -883,16 +791,10 @@ footer {
   .slides img{ height:280px; }
   .section-inner{ padding:70px 18px; }
   .hero-actions .btn{ padding:12px 20px; font-size:13px; }
-  .launch-banner-track span{ font-size:12px; }
 }
 </style>
 </head>
 <body>
-
-<div class="launch-banner" id="launchBanner" role="status" aria-label="Website launching soon announcement">
-  <div class="launch-banner-track" id="launchBannerTrack"></div>
-  <button class="launch-banner-close" id="launchBannerClose" aria-label="Dismiss banner">✕</button>
-</div>
 
 <div class="crops-bg">
   <span>🌾</span><span>🌱</span><span>🌿</span><span>🌾</span><span>🌱</span><span>🌿</span><span>🌾</span>
@@ -967,11 +869,11 @@ footer {
         <p class="section-body" id="aboutText"></p>
         <div class="about-stats">
           <div class="stat-card reveal reveal-d3">
-            <div class="stat-num">100+</div>
+            <div class="stat-num">300+</div>
             <div class="stat-label" id="stat1">Happy Farmers</div>
           </div>
           <div class="stat-card reveal reveal-d4">
-            <div class="stat-num">90+</div>
+            <div class="stat-num">150+</div>
             <div class="stat-label" id="stat2">Products</div>
           </div>
           <div class="stat-card reveal reveal-d5">
@@ -1136,6 +1038,7 @@ footer {
           <div>
             <div class="ci-label" id="phoneLabel">Phone</div>
             <div class="ci-value">+91 85500 47165</div>
+            <div class="ci-value">+91 88673 16025</div>
           </div>
         </div>
         <div class="contact-item reveal reveal-d3">
@@ -1192,7 +1095,6 @@ footer {
 <script>
 const content = {
   en: {
-    launchBanner: "🚀 Our New Website is Launching Soon — Stay Tuned!",
     heroBadge: "Trusted Since Generations",
     mainTitle: "Shri Padmavati Krushi Aushadi Kendra",
     subtitle: "Your trusted partner for premium seeds, fertilizers, pesticides & expert agricultural guidance in M K Hubli.",
@@ -1220,17 +1122,16 @@ const content = {
     contactTag: "Find Us",
     address: "NH-4 Service Road, Gandhinagar, M K Hubli, Karnataka – 591118",
     addressLabel: "Address", phoneLabel: "Phone", hoursLabel: "Business Hours",
-    hours: "Mon–Sat: 8:00 AM – 8:00 PM",
+    hours: "Mon–sun: 8:00 AM – 10:00 PM",
     navAbout: "About", navProducts: "Products", navGallery: "Gallery", navContact: "Contact",
     callLabel: "Call Now",
     footerText: "© 2026 Shri Padmavati Krushi Aushadi Kendra · M K Hubli, Karnataka",
     footerName: "Shri Padmavati Krushi Aushadi Kendra"
   },
   kn: {
-    launchBanner: "🚀 ನಮ್ಮ ಹೊಸ ವೆಬ್‌ಸೈಟ್ ಶೀಘ್ರದಲ್ಲೇ ಬಿಡುಗಡೆಯಾಗಲಿದೆ — ಕಾಯುತ್ತಿರಿ!",
     heroBadge: "ತಲೆಮಾರುಗಳಿಂದ ನಂಬಿಕಸ್ಥ",
     mainTitle: "ಶ್ರೀ ಪದ್ಮಾವತಿ ಕೃಷಿ ಔಷಧಿ ಕೇಂದ್ರ",
-    subtitle: "ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿಯಲ್ಲಿ ರೈತರಿಗೆ ಗುಣಮಟ್ಟದ ಬೀಜಗಳು, ಗೊಬ್ಬರಗಳು ಮತ್ತು ತಜ್ಞ ಮಾರ್ಗದರ್ಶನ.",
+    subtitle: "ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿಯಲ್ಲಿ ರೈತರಿಗೆ ಗುಣಮಟ್ಟದ ಬೀಜಗಳು, ರಾಸಾಯನಿಕ ಮತ್ತು ಸಾವಯವ ಔಷಧಿಗಳು,ಗೊಬ್ಬರಗಳು ಮತ್ತು ತಜ್ಞ ಮಾರ್ಗದರ್ಶನ.",
     aboutTitle: "ಕೃಷಿಯಲ್ಲಿ ಬೇರುಬಿಟ್ಟ, ರೈತರೊಂದಿಗೆ ಬೆಳೆದ",
     aboutText: "ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿ, ಬೆಳಗಾವಿ ಜಿಲ್ಲೆಯ ವಿಶ್ವಾಸಾರ್ಹ ಕೃಷಿ ಅಂಗಡಿ. ಉತ್ತಮ ಬೆಳೆ ಮತ್ತು ಉತ್ಪಾದನೆಗಾಗಿ ಗುಣಮಟ್ಟದ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ತಜ್ಞ ಸಲಹೆ ನೀಡುತ್ತೇವೆ.",
     yearsLabel: "ವರ್ಷಗಳ ನಂಬಿಕೆ",
@@ -1255,14 +1156,13 @@ const content = {
     contactTag: "ಸಂಪರ್ಕ",
     address: "ಎನ್ಎಚ್-4 ಸರ್ವಿಸ್ ರಸ್ತೆ, ಗಾಂಧಿನಗರ, ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿ, ಕರ್ನಾಟಕ – 591118",
     addressLabel: "ವಿಳಾಸ", phoneLabel: "ದೂರವಾಣಿ", hoursLabel: "ವ್ಯವಹಾರ ಸಮಯ",
-    hours: "ಸೋಮ–ಶನಿ: ಬೆಳ. 8:00 – ಸಂ. 8:00",
+    hours: "ಸೋಮ–ರವಿ: ಬೆಳ. 8:00 – ಸಂ. 10:00",
     navAbout: "ನಮ್ಮ ಬಗ್ಗೆ", navProducts: "ಉತ್ಪನ್ನಗಳು", navGallery: "ಗ್ಯಾಲರಿ", navContact: "ಸಂಪರ್ಕ",
     callLabel: "ಕರೆ ಮಾಡಿ",
     footerText: "© 2026 ಶ್ರೀ ಪದ್ಮಾವತಿ ಕೃಷಿ ಔಷಧಿ ಕೇಂದ್ರ · ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿ, ಕರ್ನಾಟಕ",
     footerName: "ಶ್ರೀ ಪದ್ಮಾವತಿ ಕೃಷಿ ಔಷಧಿ ಕೇಂದ್ರ"
   },
   hi: {
-    launchBanner: "🚀 हमारी नई वेबसाइट जल्द ही लॉन्च हो रही है — बने रहें!",
     heroBadge: "पीढ़ियों से विश्वसनीय",
     mainTitle: "श्री पद्मावती कृषि औषधि केंद्र",
     subtitle: "एम के हुबली में किसानों के लिए उत्तम बीज, उर्वरक, कीटनाशक और विशेषज्ञ कृषि मार्गदर्शन।",
@@ -1290,7 +1190,7 @@ const content = {
     contactTag: "हमसे मिलें",
     address: "एनएच-4 सर्विस रोड, गांधीनगर, एम के हुबली, कर्नाटक – 591118",
     addressLabel: "पता", phoneLabel: "फ़ोन", hoursLabel: "व्यावसायिक घंटे",
-    hours: "सोम–शनि: सुबह 8:00 – शाम 8:00",
+    hours: "सोम–रवि: सुबह 8:00 – शाम 10:00",
     navAbout: "हमारे बारे में", navProducts: "उत्पाद", navGallery: "गैलरी", navContact: "संपर्क",
     callLabel: "अभी कॉल करें",
     footerText: "© 2026 श्री पद्मावती कृषि औषधि केंद्र · एम के हुबली, कर्नाटक",
@@ -1300,26 +1200,10 @@ const content = {
 
 let currentLang = 'en';
 
-function buildBanner(text) {
-  const track = document.getElementById('launchBannerTrack');
-  if (!track) return;
-  track.innerHTML = '';
-  // duplicate the message twice so the looping scroll feels seamless
-  for (let r = 0; r < 2; r++) {
-    for (let i = 0; i < 4; i++) {
-      const span = document.createElement('span');
-      span.innerHTML = `<span class="pill">New</span><span class="dot-spark"></span>${text}`;
-      track.appendChild(span);
-    }
-  }
-}
-
 function setLang(l) {
   currentLang = l;
   const c = content[l];
   const set = (id, val) => { const el=document.getElementById(id); if(el) el.textContent=val; };
-
-  buildBanner(c.launchBanner);
 
   set('heroBadge', c.heroBadge);
   set('mainTitle', c.mainTitle);
@@ -1363,10 +1247,6 @@ function setLang(l) {
 
 setLang('en');
 
-document.getElementById('launchBannerClose').addEventListener('click', () => {
-  document.body.classList.add('banner-hidden');
-});
-
 let idx = 0;
 const slidesEl = document.getElementById('slides');
 const dotsBox  = document.getElementById('dots');
@@ -1408,4 +1288,3 @@ window.addEventListener('scroll', () => {
 </script>
 </body>
 </html>
-
