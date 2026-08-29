@@ -8,6 +8,10 @@
 <meta name="keywords" content="Krushi Kendra, Seeds, Fertilizer, Pesticide, M K Hubli, Karnataka">
 <meta property="og:title" content="Shri Padmavati Krushi Aushadi Kendra">
 <meta property="og:description" content="Trusted Agricultural Solutions for Farmers in M K Hubli">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https: data:; frame-src https://www.google.com; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -155,8 +159,22 @@ nav {
   position: relative;
   padding: 120px 24px 80px;
   overflow: hidden;
-  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(29,185,84,0.12) 0%, transparent 70%),
-              linear-gradient(180deg, #071a0d 0%, #0a2e14 60%, #071a0d 100%);
+  background-image: url("https://ik.imagekit.io/2bihaekhf/AHRPTWk4QVtDjpdu_4vm4ujgru21R0IiPbOBg-pB1LOUYrH_stzbmXoZMs88THKiSctyUk4yJn2j7w5SvO-Nm0p2lS4WMVxpB1TMR4S8L7iM46FgW47cnDpESsbt5F3rcuwDzoW_YlYUfle70C3Qw3060-h4080-k-no.jpg?updatedAt=1787986730221");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(29,185,84,0.04) 0%, transparent 70%),
+              linear-gradient(180deg, rgba(7,26,13,0.18) 0%, rgba(10,46,20,0.16) 60%, rgba(7,26,13,0.2) 100%);
+  z-index: 0;
+}
+.hero-rings, .hero-inner { position: relative; z-index: 1; }
+@media (max-width: 900px) {
+  .hero { background-attachment: scroll; }
 }
 
 .hero-rings {
@@ -187,6 +205,9 @@ nav {
   text-align: center;
   max-width: 860px;
   margin: 0 auto;
+}
+.hero-inner h1, .hero-inner .hero-subtitle, .hero-inner .hero-badge {
+  text-shadow: 0 2px 12px rgba(0,0,0,0.55);
 }
 
 .hero-badge {
@@ -837,11 +858,11 @@ footer {
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
         <span id="callLabel">Call Now</span>
       </a>
-      <a class="btn btn-ig" href="https://www.instagram.com/shri_padmavati_krushi_kendra" target="_blank">
+      <a class="btn btn-ig" href="https://www.instagram.com/shri_padmavati_krushi_kendra" target="_blank" rel="noopener noreferrer">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         Instagram
       </a>
-      <a class="btn btn-snap" href="https://www.snapchat.com/place/shree-padmavati-krushi-aushadi-kendra/cb59e176-5352-4ee7-8a16-c8cd1f6327f0?locale=en-US%2Cen%3Bq%3D0.9&share_id=U4ClWOwvmQA" target="_blank">
+      <a class="btn btn-snap" href="https://www.snapchat.com/place/shree-padmavati-krushi-aushadi-kendra/cb59e176-5352-4ee7-8a16-c8cd1f6327f0?locale=en-US%2Cen%3Bq%3D0.9&share_id=U4ClWOwvmQA" target="_blank" rel="noopener noreferrer">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.166.006C9.579-.028 7.043 1.063 5.25 3.01c-1.5 1.636-2.25 3.82-2.25 6.018v.618c0 .504-.08 1.004-.24 1.484l-.607 1.814c-.08.24-.003.505.19.659.454.362 1.19.663 2.237.903.149.033.271.143.303.294.064.3.16.591.284.866.077.17.022.367-.133.478-.228.163-.493.39-.493.69 0 .434.424.72.885.72.266 0 .556-.067.874-.202.42-.18.89-.274 1.37-.274.41 0 .81.072 1.2.212.73.265 1.378.754 2.13.754.751 0 1.4-.49 2.13-.754.39-.14.79-.212 1.2-.212.48 0 .95.094 1.37.274.318.135.608.202.874.202.46 0 .885-.286.885-.72 0-.3-.265-.527-.493-.69-.155-.11-.21-.308-.133-.478.124-.275.22-.566.284-.866.032-.151.154-.261.303-.294 1.047-.24 1.783-.54 2.237-.903.193-.154.27-.42.19-.659l-.607-1.814c-.16-.48-.24-.98-.24-1.484v-.618c0-2.276-.79-4.51-2.374-6.153C17.186 1 14.754-.028 12.166.006z"/></svg>
         Snapchat
       </a>
@@ -856,7 +877,7 @@ footer {
     <div class="about-grid">
       <div class="about-visual reveal">
         <div class="about-img-wrap">
-          <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&auto=format" alt="Agricultural field">
+          <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&auto=format" alt="Agricultural field" loading="lazy">
         </div>
         <div class="about-accent-card">
           <span class="big">1.5+</span>
@@ -869,11 +890,11 @@ footer {
         <p class="section-body" id="aboutText"></p>
         <div class="about-stats">
           <div class="stat-card reveal reveal-d3">
-            <div class="stat-num">300+</div>
+            <div class="stat-num">100+</div>
             <div class="stat-label" id="stat1">Happy Farmers</div>
           </div>
           <div class="stat-card reveal reveal-d4">
-            <div class="stat-num">150+</div>
+            <div class="stat-num">90+</div>
             <div class="stat-label" id="stat2">Products</div>
           </div>
           <div class="stat-card reveal reveal-d5">
@@ -945,12 +966,12 @@ footer {
       <button class="slide-btn slide-prev" onclick="prevSlide()">❮</button>
       <button class="slide-btn slide-next" onclick="nextSlide()">❯</button>
       <div class="slides" id="slides">
-        <img src="https://lh3.googleusercontent.com/p/AF1QipP76oWdC9aXc2iEh0DoROC7LG67mTiVpsbEIVUs=w1366-h611" alt="Shop interior">
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGxAmf24ieK8XwR1kC6dkEU5hawP8ybhCWjKW8H_8x4ekouiZ-y_ZdvSofKQaQFKjXfiDhxb0oM63wqdkdX2LP3xKsNLYcjzBXQdftGd6ZSPIaZnFpAX3pQ3AbKw_QBXzmdxuBka3bQHD4=s1360-w1360-h1020-rw" alt="Agricultural products">
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAG5Eg1frsBxlF6xQdwtpHhXfjZHazP-C2cI93BXLHwwFxvTsig9fOkopWkeJrTf_bOgpmSnlaMK2enWMtYAbrhuWPI5gDGXAlIlhpAQTLg7pUbr5ypck0FEQtO50aGaga_4goOhjy8Elqrn=s1360-w1360-h1020-rw" alt="Seeds and fertilizers">
-        <img src="https://lh3.googleusercontent.com/p/AF1QipMfAIpM7pvsgriBarrSXpaiTJPadgty6ohzr4dv=w1366-h611" alt="Store front">
-        <img src="https://ik.imagekit.io/2bihaekhf/product%20images/WhatsApp%20Image%202026-03-14%20at%207.19.35%20PM%20(1).jpeg?updatedAt=1773511126116" alt="Shop exterior">
-        <img src="https://ik.imagekit.io/2bihaekhf/product%20images/WhatsApp%20Image%202026-03-14%20at%207.19.32%20PM.jpeg?updatedAt=1773511126088" alt="Location view">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipP76oWdC9aXc2iEh0DoROC7LG67mTiVpsbEIVUs=w1366-h611" alt="Shop interior" loading="lazy">
+        <img src="https://ik.imagekit.io/2bihaekhf/AHRPTWk3u2JXs_JQsl4Le6ALsELjk8XVKuqe_I1fTgj4P65Am96_TirGA3SIU64Evs5Ktucaq5W7O5K5wsWk1c0hRiXvg8eRsvtXYmH8-Y5TUShTZf88XnynzxyRMFx1YT2pG7wHd_C_Fy9VBWQMw958-h1280-k-no.jpg?updatedAt=1787986557229" alt="Agricultural products" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmCSnG9Wbp0KhoEQIc0gAsglXf5ZKfC-rHem8Z1zsPhms6kcd64Ucx9KQxOA70UBZiky-QauTdQgOL1PTBzj3GWW3xRoR7KjWJMsOrcrh12fXoNNlOmw50HygUIkWg1RsbcO5bj6bfJmJI=s1360-w1360-h1020-rw" alt="Seeds and fertilizers" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMfAIpM7pvsgriBarrSXpaiTJPadgty6ohzr4dv=w1366-h611" alt="Store front" loading="lazy">
+        <img src="https://ik.imagekit.io/2bihaekhf/Screenshot%202026-06-21%20192000.png?updatedAt=1782050201178" alt="Shop exterior" loading="lazy">
+        <img src="https://ik.imagekit.io/2bihaekhf/product%20images/WhatsApp%20Image%202026-03-14%20at%207.19.44%20PM.jpeg?updatedAt=1773511126303" alt="Location view" loading="lazy">
       </div>
       <div class="dots" id="dots"></div>
       <div class="slide-counter"><span id="slideNum">1</span> / <span id="slideTotal">6</span></div>
@@ -1004,10 +1025,10 @@ footer {
     <div class="review-cta reveal">
       <p id="reviewCta">Share your experience and help fellow farmers discover quality agricultural solutions.</p>
       <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-        <a href="https://search.google.com/local/writereview?placeid=ChIJY3_6mFlFvzsRkcx4hvOh4dM" target="_blank" class="btn btn-review">
+        <a href="https://search.google.com/local/writereview?placeid=ChIJY3_6mFlFvzsRkcx4hvOh4dM" target="_blank" rel="noopener noreferrer" class="btn btn-review">
           ⭐ <span id="googleReviewBtn">Write a Google Review</span>
         </a>
-        <a href="https://www.snapchat.com/place/shree-padmavati-krushi-aushadi-kendra/cb59e176-5352-4ee7-8a16-c8cd1f6327f0?locale=en-US%2Cen%3Bq%3D0.9&share_id=U4ClWOwvmQA" target="_blank" class="btn btn-snap">
+        <a href="https://www.snapchat.com/place/shree-padmavati-krushi-aushadi-kendra/cb59e176-5352-4ee7-8a16-c8cd1f6327f0?locale=en-US%2Cen%3Bq%3D0.9&share_id=U4ClWOwvmQA" target="_blank" rel="noopener noreferrer" class="btn btn-snap">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.166.006C9.579-.028 7.043 1.063 5.25 3.01c-1.5 1.636-2.25 3.82-2.25 6.018v.618c0 .504-.08 1.004-.24 1.484l-.607 1.814c-.08.24-.003.505.19.659.454.362 1.19.663 2.237.903.149.033.271.143.303.294.064.3.16.591.284.866.077.17.022.367-.133.478-.228.163-.493.39-.493.69 0 .434.424.72.885.72.266 0 .556-.067.874-.202.42-.18.89-.274 1.37-.274.41 0 .81.072 1.2.212.73.265 1.378.754 2.13.754.751 0 1.4-.49 2.13-.754.39-.14.79-.212 1.2-.212.48 0 .95.094 1.37.274.318.135.608.202.874.202.46 0 .885-.286.885-.72 0-.3-.265-.527-.493-.69-.155-.11-.21-.308-.133-.478.124-.275.22-.566.284-.866.032-.151.154-.261.303-.294 1.047-.24 1.783-.54 2.237-.903.193-.154.27-.42.19-.659l-.607-1.814c-.16-.48-.24-.98-.24-1.484v-.618c0-2.276-.79-4.51-2.374-6.153C17.186 1 14.754-.028 12.166.006z"/></svg>
           <span id="snapBtn">Find on Snapchat</span>
         </a>
@@ -1038,7 +1059,6 @@ footer {
           <div>
             <div class="ci-label" id="phoneLabel">Phone</div>
             <div class="ci-value">+91 85500 47165</div>
-            <div class="ci-value">+91 88673 16025</div>
           </div>
         </div>
         <div class="contact-item reveal reveal-d3">
@@ -1053,16 +1073,16 @@ footer {
             <a class="btn btn-wa" href="https://wa.me/918550047165">
               💬 WhatsApp
             </a>
-            <a class="btn btn-ig" href="https://www.instagram.com/shri_padmavati_krushi_kendra" target="_blank">
+            <a class="btn btn-ig" href="https://www.instagram.com/shri_padmavati_krushi_kendra" target="_blank" rel="noopener noreferrer">
               📸 Instagram
             </a>
           </div>
           <div class="social-row" style="margin-top:4px;">
-            <a class="btn btn-snap" href="https://www.snapchat.com/place/shree-padmavati-krushi-aushadi-kendra/cb59e176-5352-4ee7-8a16-c8cd1f6327f0?locale=en-US%2Cen%3Bq%3D0.9&share_id=U4ClWOwvmQA" target="_blank">
+            <a class="btn btn-snap" href="https://www.snapchat.com/place/shree-padmavati-krushi-aushadi-kendra/cb59e176-5352-4ee7-8a16-c8cd1f6327f0?locale=en-US%2Cen%3Bq%3D0.9&share_id=U4ClWOwvmQA" target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.166.006C9.579-.028 7.043 1.063 5.25 3.01c-1.5 1.636-2.25 3.82-2.25 6.018v.618c0 .504-.08 1.004-.24 1.484l-.607 1.814c-.08.24-.003.505.19.659.454.362 1.19.663 2.237.903.149.033.271.143.303.294.064.3.16.591.284.866.077.17.022.367-.133.478-.228.163-.493.39-.493.69 0 .434.424.72.885.72.266 0 .556-.067.874-.202.42-.18.89-.274 1.37-.274.41 0 .81.072 1.2.212.73.265 1.378.754 2.13.754.751 0 1.4-.49 2.13-.754.39-.14.79-.212 1.2-.212.48 0 .95.094 1.37.274.318.135.608.202.874.202.46 0 .885-.286.885-.72 0-.3-.265-.527-.493-.69-.155-.11-.21-.308-.133-.478.124-.275.22-.566.284-.866.032-.151.154-.261.303-.294 1.047-.24 1.783-.54 2.237-.903.193-.154.27-.42.19-.659l-.607-1.814c-.16-.48-.24-.98-.24-1.484v-.618c0-2.276-.79-4.51-2.374-6.153C17.186 1 14.754-.028 12.166.006z"/></svg>
               Snapchat
             </a>
-            <a class="btn btn-review" href="https://search.google.com/local/writereview?placeid=ChIJY3_6mFlFvzsRkcx4hvOh4dM" target="_blank">
+            <a class="btn btn-review" href="https://search.google.com/local/writereview?placeid=ChIJY3_6mFlFvzsRkcx4hvOh4dM" target="_blank" rel="noopener noreferrer">
               ⭐ Review Us
             </a>
           </div>
@@ -1071,7 +1091,9 @@ footer {
       <div class="map-wrap reveal reveal-d2">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380.5634953251024!2d74.6974163!3d15.7221266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf455998fa7f63%3A0xd3e1a1f38678cc91!2sShree%20Padmavati%20Krushi%20Aushadi%20Kendra!5e0!3m2!1sen!2sin!4v1706350000000"
-          allowfullscreen loading="lazy"></iframe>
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          sandbox="allow-scripts allow-same-origin allow-popups"
+          title="Shri Padmavati Krushi Aushadi Kendra location map"></iframe>
       </div>
     </div>
   </div>
@@ -1122,7 +1144,7 @@ const content = {
     contactTag: "Find Us",
     address: "NH-4 Service Road, Gandhinagar, M K Hubli, Karnataka – 591118",
     addressLabel: "Address", phoneLabel: "Phone", hoursLabel: "Business Hours",
-    hours: "Mon–sun: 8:00 AM – 10:00 PM",
+    hours: "Mon–Sat: 8:00 AM – 8:00 PM",
     navAbout: "About", navProducts: "Products", navGallery: "Gallery", navContact: "Contact",
     callLabel: "Call Now",
     footerText: "© 2026 Shri Padmavati Krushi Aushadi Kendra · M K Hubli, Karnataka",
@@ -1131,7 +1153,7 @@ const content = {
   kn: {
     heroBadge: "ತಲೆಮಾರುಗಳಿಂದ ನಂಬಿಕಸ್ಥ",
     mainTitle: "ಶ್ರೀ ಪದ್ಮಾವತಿ ಕೃಷಿ ಔಷಧಿ ಕೇಂದ್ರ",
-    subtitle: "ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿಯಲ್ಲಿ ರೈತರಿಗೆ ಗುಣಮಟ್ಟದ ಬೀಜಗಳು, ರಾಸಾಯನಿಕ ಮತ್ತು ಸಾವಯವ ಔಷಧಿಗಳು,ಗೊಬ್ಬರಗಳು ಮತ್ತು ತಜ್ಞ ಮಾರ್ಗದರ್ಶನ.",
+    subtitle: "ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿಯಲ್ಲಿ ರೈತರಿಗೆ ಗುಣಮಟ್ಟದ ಬೀಜಗಳು, ಗೊಬ್ಬರಗಳು ಮತ್ತು ತಜ್ಞ ಮಾರ್ಗದರ್ಶನ.",
     aboutTitle: "ಕೃಷಿಯಲ್ಲಿ ಬೇರುಬಿಟ್ಟ, ರೈತರೊಂದಿಗೆ ಬೆಳೆದ",
     aboutText: "ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿ, ಬೆಳಗಾವಿ ಜಿಲ್ಲೆಯ ವಿಶ್ವಾಸಾರ್ಹ ಕೃಷಿ ಅಂಗಡಿ. ಉತ್ತಮ ಬೆಳೆ ಮತ್ತು ಉತ್ಪಾದನೆಗಾಗಿ ಗುಣಮಟ್ಟದ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ತಜ್ಞ ಸಲಹೆ ನೀಡುತ್ತೇವೆ.",
     yearsLabel: "ವರ್ಷಗಳ ನಂಬಿಕೆ",
@@ -1156,7 +1178,7 @@ const content = {
     contactTag: "ಸಂಪರ್ಕ",
     address: "ಎನ್ಎಚ್-4 ಸರ್ವಿಸ್ ರಸ್ತೆ, ಗಾಂಧಿನಗರ, ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿ, ಕರ್ನಾಟಕ – 591118",
     addressLabel: "ವಿಳಾಸ", phoneLabel: "ದೂರವಾಣಿ", hoursLabel: "ವ್ಯವಹಾರ ಸಮಯ",
-    hours: "ಸೋಮ–ರವಿ: ಬೆಳ. 8:00 – ಸಂ. 10:00",
+    hours: "ಸೋಮ–ಶನಿ: ಬೆಳ. 8:00 – ಸಂ. 8:00",
     navAbout: "ನಮ್ಮ ಬಗ್ಗೆ", navProducts: "ಉತ್ಪನ್ನಗಳು", navGallery: "ಗ್ಯಾಲರಿ", navContact: "ಸಂಪರ್ಕ",
     callLabel: "ಕರೆ ಮಾಡಿ",
     footerText: "© 2026 ಶ್ರೀ ಪದ್ಮಾವತಿ ಕೃಷಿ ಔಷಧಿ ಕೇಂದ್ರ · ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿ, ಕರ್ನಾಟಕ",
@@ -1190,7 +1212,7 @@ const content = {
     contactTag: "हमसे मिलें",
     address: "एनएच-4 सर्विस रोड, गांधीनगर, एम के हुबली, कर्नाटक – 591118",
     addressLabel: "पता", phoneLabel: "फ़ोन", hoursLabel: "व्यावसायिक घंटे",
-    hours: "सोम–रवि: सुबह 8:00 – शाम 10:00",
+    hours: "सोम–शनि: सुबह 8:00 – शाम 8:00",
     navAbout: "हमारे बारे में", navProducts: "उत्पाद", navGallery: "गैलरी", navContact: "संपर्क",
     callLabel: "अभी कॉल करें",
     footerText: "© 2026 श्री पद्मावती कृषि औषधि केंद्र · एम के हुबली, कर्नाटक",
